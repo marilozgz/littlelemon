@@ -1,9 +1,15 @@
-import Home from "./pages/home";
+import Home from "./pages/Home";
+import Reserve from "./pages/Reserve";
+import {Route, Switch, Router} from "wouter"
 function App() {
   return (
     <div className="App">
-   <Home/>
-  
+      <Router>
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/reserve" component={Reserve} />
+        </Switch>
+      </Router>
     </div>
   );
 }

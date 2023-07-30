@@ -5,8 +5,8 @@ import {
   Image,
   Stack,
   Text,
-  useBreakpointValue,Box} from '@chakra-ui/react'
-import image from '../assets/food1.avif'
+  useBreakpointValue} from '@chakra-ui/react'
+  import {Link as WouterLink} from "wouter";
 export default function Hero() {
   return (
     <Stack  marginTop={6}minH={'40vh'} direction={{ base: 'column', md: 'row' }} background={"#495e57"}>
@@ -37,6 +37,7 @@ export default function Hero() {
           We are a family owned Mediterraneran restaurant, focused on traditional recipes servred with a modern twist.
           </Text>
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+          <WouterLink to="/reserve">
             <Button
               rounded={'full'}
               bg={'yellow.400'}
@@ -46,6 +47,7 @@ export default function Hero() {
               }}>
               Reserve Table
             </Button>
+            </WouterLink>
           </Stack>
         </Stack>
       </Flex>
