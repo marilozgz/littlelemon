@@ -51,6 +51,7 @@ export default function ReserveForm() {
             placeholder="email"
             _placeholder={{ color: 'gray.500' }}
             type="email"
+            errorBorderColor='red.300'
           />
         </FormControl>
         <HStack>
